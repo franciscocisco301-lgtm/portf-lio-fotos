@@ -1,47 +1,46 @@
-### `index.html`
-```html
-<!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Início — Portfólio Fotográfico</title>
-<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-<header class="site-header">
-<div class="container header-inner">
-<a href="index.html" class="brand">Seu Nome</a>
-<nav class="nav">
-<a href="gallery.html">Galeria</a>
-<a href="about.html">Sobre</a>
-<a href="contact.html">Contato</a>
-</nav>
+<!-- 📄 index.html -->
+<h2>Galeria</h2>
+<div class="upload-area">
+<input type="file" id="fileInput" multiple accept="image/*">
+<p>Arraste suas fotos aqui ou clique para enviar</p>
 </div>
-</header>
+<div id="galleryContainer" class="gallery-grid"></div>
+</section>
 
 
-<main class="container hero">
-<div class="hero-left">
-<h1>Fotografia clássica. Elegância atemporal.</h1>
-<p class="lead">Portfólio profissional com curadoria de fotos em alta resolução — perfeito para clientes e galerias.</p>
-<a class="cta" href="gallery.html">Ver Galeria</a>
+<section id="sobre" class="sobre">
+<h2>Sobre Mim</h2>
+<div class="sobre-content">
+<img src="assets/images/placeholder/profile.jpg" alt="Fotógrafo">
+<div>
+<p>Sou <strong>Francisco Junior</strong>, fotógrafo apaixonado por eternizar momentos únicos. Minha missão é transformar emoções em imagens, buscando sempre a beleza na luz e nos detalhes.</p>
+<p>Trabalho com ensaios, eventos e retratos, unindo técnica e sensibilidade para capturar a essência de cada pessoa e momento.</p>
 </div>
-<div class="hero-right">
-<img src="assets/images/placeholder/hero.jpg" alt="hero" class="hero-img">
 </div>
-</main>
+</section>
 
 
-<footer class="site-footer">
-<div class="container">© <span id="year"></span> Seu Nome • Todos os direitos reservados</div>
+<section id="contato" class="contato">
+<h2>Contato</h2>
+<form id="contactForm">
+<input type="text" placeholder="Seu nome" required>
+<input type="email" placeholder="Seu e-mail" required>
+<textarea placeholder="Sua mensagem" required></textarea>
+<button type="submit" class="btn">Enviar</button>
+</form>
+<p class="socials">Siga nas redes:
+<a href="#">Instagram</a> ·
+<a href="#">Facebook</a> ·
+<a href="#">LinkedIn</a>
+</p>
+</section>
+
+
+<footer>
+<p>© 2025 Francisco Junior - Todos os direitos reservados.</p>
 </footer>
 
 
 <script src="assets/js/main.js"></script>
 </body>
 </html>
-```
-
-
----
