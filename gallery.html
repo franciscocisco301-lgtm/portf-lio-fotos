@@ -1,0 +1,52 @@
+### `gallery.html`
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Galeria — Portfólio Fotográfico</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a href="index.html" class="brand">Seu Nome</a>
+<nav class="nav">
+<a href="gallery.html">Galeria</a>
+<a href="about.html">Sobre</a>
+<a href="contact.html">Contato</a>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<section class="gallery-controls">
+<div>
+<label class="btn-upload">Enviar fotos<input type="file" id="fileElem" accept="image/*" multiple></label>
+<button id="clearBtn" class="btn-ghost">Limpar armazenadas</button>
+</div>
+</section>
+
+
+<section id="galleryGrid" class="gallery-grid" aria-live="polite">
+<!-- thumbs inseridos por JS -->
+</section>
+</main>
+
+
+<div id="lightbox" class="lightbox" aria-hidden="true">
+<button id="lbClose" class="lb-close">✕</button>
+<img id="lbImage" alt="Visualização">
+</div>
+
+
+<footer class="site-footer">
+<div class="container">© <span id="year2"></span> Seu Nome</div>
+</footer>
+
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+```
+
+
+---
